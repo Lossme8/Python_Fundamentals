@@ -1,0 +1,10 @@
+import pandas as pd
+df = pd.read_csv("winequality-red.csv")
+df.head()
+print("-"*30)
+#print(df.filter(["column","column","column"]))
+df.filter(["volatile acidity", "pH","alcohol"])
+df.filter(regex ='[aA]')
+df.describe()
+#df.value_counts()
+print(df)
