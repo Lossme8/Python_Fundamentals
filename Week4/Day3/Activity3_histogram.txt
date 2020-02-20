@@ -1,0 +1,20 @@
+
+(base) C:\Users\student-cpt-061>python
+Python 3.7.4 (default, Aug  9 2019, 18:34:13) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> a = np.array([20,80,50,43,56,70,50,90,10,20,60,50,80,30,27]) # This is the data provided
+>>> np.histogram(a,bins = [0,10,20,30,40,50,60,70,80,90,100]) # this is the x-axis
+(array([0, 1, 3, 1, 1, 4, 1, 1, 2, 1], dtype=int64), array([  0,  10,  20,  30,  40,  50,  60,  70,  80,  90, 100]))
+>>> hist,bins = np.histogram(a,bins = [0,10,20,30,40,50,60,70,80,90,100])
+>>> print(hist)
+[0 1 3 1 1 4 1 1 2 1]
+>>> print(bins)
+[  0  10  20  30  40  50  60  70  80  90 100]
+>>> from matplotlib import pyplot as plt
+>>> import numpy as np
+>>> plt.hist(a,bins = [0,10,20,30,40,50,60,70,80,90,100])
+(array([0., 1., 3., 1., 1., 4., 1., 1., 2., 1.]), array([  0,  10,  20,  30,  40,  50,  60,  70,  80,  90, 100]), <a list of 10 Patch objects>)
+>>> plt.title("histogram")
+Text(0.5, 1.0, 'histogram')
+>>> plt.show()
