@@ -1,22 +1,13 @@
-is_male = False #Change this to true or false to check the print out statements
-is_tall = True
+is_hot = False
+is_cold =False
 
-if is_male:
-      print("You are a male")
+if is_hot:
+    print("It's a hot day")
+    print("Drink plent of water")
+elif is_cold:
+    print("It's a cold day")
+    print("Wear warm clothes")
 else:
-    print("You are not a male")
-#OR operator to drive the if statement, this normally is called logic OR
-if is_male or is_tall:
-    print("You are a male or tall or both")
-else:
-    print("You neither male nor tall")
+    print("It's a lovely day")
 
-  #AND operator to drive the if statement,this normally is called logic OR
-if is_male and is_tall: #all the conditions must be true
-    print("You are a tall male ")
-elif is_male and not(is_tall):
-      print("You are a short male")
-elif not(is_male) and is_tall:
-                             print("You are not male but are tall")
-else:
-    print("You  not a male and not tall")
+print("Enjoy your day")
